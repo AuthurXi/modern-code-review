@@ -28,10 +28,12 @@ int main(){
 				cout << "Player 2: ";
 			cout << "Which cell to mark? i:[0..2], j:[0..2]: "; 
 			cin >> i >> j;
-			if (turn == false)
+			if (turn == false){	
 			   game[i][j] = 'X';
-			else 
+			}
+			else{
 			   game[i][j] = 'O';
+			}
 			if (isWin(game)){
 				cout << "Win!" << endl;
 				break; // need to terminate the problem
